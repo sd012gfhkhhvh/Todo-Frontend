@@ -17,7 +17,7 @@ function App() {
       setTodos(jsonData)
     })
   }
-  useEffect(fetchData, []);
+  useEffect(fetchData, [todos]);
 
   //edit todos
   const editTodo = (_id, title, description) => {
